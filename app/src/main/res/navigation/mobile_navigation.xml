@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_music">
+
+    <fragment
+        android:id="@+id/navigation_music"
+        android:name="activitytest.example.com.mymusic.ui.main.music.MusicFragment"
+        android:label="@string/title_music"
+        tools:layout="@layout/fragment_music" >
+        <action
+            android:id="@+id/action_navigation_music_to_musicListItemItemFragment"
+            app:destination="@id/musicListItemItemFragment" />
+        <action
+            android:id="@+id/action_navigation_music_to_listenFragment2"
+            app:destination="@id/listenFragment2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="activitytest.example.com.mymusic.ui.main.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_navigation_home_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_listenFragment2"
+            app:destination="@id/listenFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="activitytest.example.com.mymusic.ui.lore.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="activitytest.example.com.mymusic.ui.lore.register.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+
+    <fragment
+        android:id="@+id/musicListItemItemFragment"
+        android:name="activitytest.example.com.mymusic.ui.main.music.innerFragment.MusicListItemItemFragment"
+        android:label="MusicListItemItemFragment" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/listenFragment2"
+        android:name="activitytest.example.com.mymusic.ui.listen.ListenFragment"
+        android:label="ListenFragment" />
+
+
+</navigation>

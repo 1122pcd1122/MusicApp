@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/music_navigation"
+    app:startDestination="@id/searchFragment">
+
+    <fragment
+        android:id="@+id/MContentFragment"
+        android:name="activitytest.example.com.mymusic.ui.musicInfo.musicList.MContentFragment"
+        android:label="fragment_content"
+        tools:layout="@layout/fragment_content" >
+        <action
+            android:id="@+id/action_MContentFragment_to_listenFragment"
+            app:destination="@id/listenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="activitytest.example.com.mymusic.ui.musicInfo.searchMusic.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_MContentFragment"
+            app:destination="@id/MContentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listenFragment"
+        android:name="activitytest.example.com.mymusic.ui.listen.ListenFragment"
+        android:label="fragment_listen"
+        tools:layout="@layout/fragment_listen" />
+
+
+</navigation>

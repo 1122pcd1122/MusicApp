@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MyMusic</string>
+    <string name="title_music">音乐</string>
+    <string name="title_home">我的</string>
+    <string name="fragment_title">音乐</string>
+    <string name="user_name">pcd111</string>
+    <string name="user_signature">呼呼哈嘿</string>
+    <string name="blank_model">暗黑模式</string>
+    <string name="menu_login_item">登录</string>
+    <string name="menu_register_item">注册</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_login">手机号登录</string>
+    <string name="login_agreement">同意《用户协议》《隐私协议》《儿童隐私协议》</string>
+    <string name="btn_register">注册</string>
+    <string name="phone_num">手机号</string>
+    <string name="reg_passWord">密码</string>
+    <string name="reg_confirm">再次确认</string>
+    <string name="reg_userName">用户名</string>
+    <string name="outLogin">退出登录</string>
+    <string name="music_name">踏山河</string>
+    <string name="music_time">05:01</string>
+    <string name="re_item_addMusicList">添加歌单</string>
+</resources>
